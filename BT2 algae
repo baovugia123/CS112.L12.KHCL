@@ -1,0 +1,42 @@
+1. Abstraction:
+    D0: 3 ct mức 1 
+        => 3 ct
+    D1: 3 ct mức 1 ( số ct D0 sinh ra = 3)
+        3 ct mức 2
+        => 6 ct
+    D2: 3 ct mức 1 (
+        6 ct mức 1   số ct D1 sinh ra = 9)  
+        3 ct mức 2
+        3 ct mức 3
+        => 15 ct
+    D3: 9 ct mức 1  (
+        6 ct mức 1   số ct D2 sinh ra = 24
+        9 ct mức 1                        )
+        9 ct mức 2
+        3 ct mức 3
+        3 ct mức 4
+        => 39 ct
+Ta để ý số cá thể ngày sau sẽ bằng ngày trước cộng cho số cá thể được sinh ra: 3,3,6,9,15,24,39,..
+=> Đây là dãy Fibonaci
+Ta thấy được số cần tìm sẽ ở vị trí lẻ, hay nói cách khác là ở vị trí 2*k+1.
+Ta tính result:  fib(2*k+1)*n
+    
+2. Pattern Recognition:
+   Tính dãy Fibonacci 
+
+3. Algorithm designed:
+    *Input: n là số cá thể mức 1
+            k là số ngày
+    *Output : số lượng cá thể sau k ngày
+    *Mã giả:
+        tạo hàm fib
+        a=0
+        b=0
+        Chạy vòng lặp i -> n
+            a = b
+            b = a+b
+            return a
+        Kết quả sẽ là fib((2*k+1)*n)
+    *Độ phức tạp thuật toán : T = O(n)
+    
+ 
